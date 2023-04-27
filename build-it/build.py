@@ -11,8 +11,8 @@ class LVgRPCBuilder:
     def __init__(self):
         self.build_script_directory = os.path.abspath(os.path.dirname(__file__))
         self.root_directory = os.path.dirname(self.build_script_directory)
-        self.server_binary_destination = os.path.join(self.root_directory, "labview source", "gRPC lv Support")
-        self.generator_binary_destination = os.path.join(self.root_directory, "labview source", "Client Server Support New", "gRPC Scripting Tools", "Proto Parser API")
+        self.server_binary_destination = os.path.join(self.root_directory, "labview source", "LabVIEW gRPC Library")
+        self.generator_binary_destination = os.path.join(self.root_directory, "labview source", "gRPC Server and Client Template [2]", "gRPC Scripting Tools", "Proto Parser API")
     
     def parse_args(self):
         parser = argparse.ArgumentParser(
